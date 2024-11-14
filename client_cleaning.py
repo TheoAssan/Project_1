@@ -26,7 +26,7 @@ client['mortgage'] = client['mortgage'].astype(bool)
 
 print(client.loc[:, 'client_id':'mortgage'].isnull().any(axis=1))
 
-client.to_csv('client_cleaned.csv',index = False)
+client.to_csv('client.csv',index = False)
 
 
 
